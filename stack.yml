@@ -9,14 +9,3 @@ services:
   required: true
   main: true
   replicas: 1
-  workloads:
-  - name: main
-    containers:
-    - name: node
-      resources:
-        request:
-          cpu: 100
-          memory: 128
-        limit:
-          cpu: 500
-          memory: 512
