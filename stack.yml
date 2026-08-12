@@ -1,0 +1,22 @@
+name: slack-inviter
+icon: slack
+title: Slack Inviter
+
+services:
+- name: slack-inviter
+  title: Slack Inviter
+  service: slack-inviter
+  required: true
+  main: true
+  replicas: 1
+  workloads:
+  - name: main
+    containers:
+    - name: node
+      resources:
+        request:
+          cpu: 100
+          memory: 128
+        limit:
+          cpu: 500
+          memory: 512
