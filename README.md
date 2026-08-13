@@ -2,6 +2,12 @@
 
 Deploy Slack Inviter applications on Kubernetes with Wodby.
 
+> [!WARNING]
+> This stack requires an existing Slackin-compatible legacy administrator API
+> token. Slack no longer issues these tokens, and ordinary Slack app or bot
+> tokens do not work with the legacy invitation endpoint. Use this stack only
+> when migrating a working Slackin installation whose token is still active.
+
 This repository defines the Wodby stack manifests and default service
 composition for Slack Inviter.
 
