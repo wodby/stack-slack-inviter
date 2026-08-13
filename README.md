@@ -31,7 +31,7 @@ start with Wodby CI build configuration:
 
 | Component / service | Default configuration |
 | --- | --- |
-| Slack Inviter<br>`slack-inviter:2.0.0` | required; enabled by default; inherits the Node.js runtime service |
+| Slack Inviter<br>`slack-inviter:2.0.1` | required; enabled by default; inherits the Node.js runtime service |
 
 ## Deploy this stack
 

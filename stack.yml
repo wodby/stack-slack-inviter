@@ -5,7 +5,7 @@ title: Slack Inviter
 services:
 - name: slack-inviter
   title: Slack Inviter
-  service: slack-inviter:2.0.0
+  service: slack-inviter:2.0.1
   required: true
   main: true
   replicas: 1
