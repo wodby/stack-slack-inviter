@@ -11,6 +11,10 @@ Deploy Slack Inviter applications on Kubernetes with Wodby.
 This repository defines the Wodby stack manifests and default service
 composition for Slack Inviter.
 
+<!-- wodby:generated:start -->
+
+## Stack contract
+
 - [Slack Inviter stack on Wodby](https://wodby.com/stacks/slack-inviter)
 - [Browse Wodby application stacks](https://wodby.com/stacks)
 - [Wodby stack documentation](https://wodby.com/docs/2.0/stacks/)
@@ -25,13 +29,25 @@ start with Wodby CI build configuration:
 
 ## Service definitions
 
-- [Slack Inviter service 2.x](https://github.com/wodby/service-slack-inviter)
+- [Slack Inviter service](https://github.com/wodby/service-slack-inviter)
 
 ## What's included
 
 | Component / service | Default configuration |
 | --- | --- |
-| Slack Inviter<br>`slack-inviter` | required; enabled by default; follows the latest released Slack Inviter service |
+| Slack Inviter<br>`slack-inviter` | required; enabled by default |
+
+Enabled optional services are selected by default but can be excluded when an
+app is created. Disabled optional services are available but not selected by
+default. Required services cannot be excluded.
+
+## Validate the stack manifest
+
+```bash
+wodby stack validate-manifest stack.yml --org <org-id>
+```
+
+<!-- wodby:generated:end -->
 
 ## Deploy this stack
 
@@ -51,11 +67,3 @@ production environments.
 When replacing or renaming a stack service, update every related link target
 and derivative reference. Stack-local names and referenced service names are
 distinct identifiers.
-
-Validate the manifests with:
-
-```bash
-wodby stack validate-manifest stack.yml --org <org-id>
-```
-
-See the [stack manifest reference](https://wodby.com/docs/2.0/stacks/template/) and the [managed services index](https://github.com/wodby/services).
