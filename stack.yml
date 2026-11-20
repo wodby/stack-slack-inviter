@@ -2,6 +2,7 @@ name: slack-inviter
 icon: slack
 docs: https://wodby.com/docs/2.0/stacks/catalog/slack-inviter/
 title: Slack Inviter
+category: collaboration
 
 services:
 - name: slack-inviter
